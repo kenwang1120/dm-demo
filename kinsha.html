@@ -259,60 +259,59 @@
 
   /* ============ TICKET MARK (brush script) ============ */
   .ticket-mark{
-    position:absolute;
-    bottom:1.5rem;
-    right:6vw;
-    z-index:3;
-    text-align:right;
-    line-height:1;
+    align-self:flex-start;
+    margin-top:1.8rem;
+    text-align:left;
+    line-height:.95;
     transform:rotate(-3.5deg);
+    transform-origin:left top;
     pointer-events:none;
-    text-shadow:0 6px 18px rgba(30,42,56,.12);
+    text-shadow:0 10px 28px rgba(30,42,56,.18);
+    z-index:3;
+    position:relative;
   }
   .ticket-mark .ticket-zh{
     display:block;
     font-family:'Ma Shan Zheng',cursive;
-    font-size:clamp(2.2rem, 4vw, 3.4rem);
+    font-size:clamp(2.6rem, 5vw, 4.6rem);
     color:var(--ink);
     letter-spacing:.08em;
-    margin-bottom:.05em;
-    margin-right:.4em;
+    margin-bottom:.1em;
+    margin-left:.4em;
   }
   .ticket-mark .ticket-amount-row{
     display:inline-flex;
     align-items:baseline;
-    gap:.2em;
+    gap:.18em;
   }
   .ticket-mark .ticket-amount{
     font-family:'Caveat Brush',cursive;
-    font-size:clamp(4rem, 8vw, 6.5rem);
+    font-size:clamp(5.5rem, 11.5vw, 10rem);
     color:var(--coral);
     letter-spacing:.01em;
-    -webkit-text-stroke:1px var(--coral-deep);
+    -webkit-text-stroke:1.8px var(--coral-deep);
     paint-order:stroke fill;
   }
   .ticket-mark .ticket-ccy{
     font-family:'Caveat Brush',cursive;
-    font-size:clamp(2.2rem, 4vw, 3.4rem);
+    font-size:clamp(3rem, 5.5vw, 5rem);
     color:var(--coral);
-    opacity:.9;
+    opacity:.92;
+    -webkit-text-stroke:1px var(--coral-deep);
+    paint-order:stroke fill;
   }
   .ticket-mark .ticket-note{
     font-family:'Noto Sans TC',sans-serif;
-    font-size:.85rem;
+    font-size:1rem;
     color:var(--ink-soft);
     font-weight:400;
-    margin-left:.35em;
+    margin-left:.4em;
     letter-spacing:.05em;
+    vertical-align:middle;
   }
   @media (max-width:820px){
     .ticket-mark{
-      bottom:auto;
-      top:auto;
-      right:6vw;
-      position:relative;
-      align-self:flex-end;
-      margin:.5rem 0 1rem;
+      margin-top:1rem;
       transform:rotate(-3deg);
     }
   }
@@ -1159,6 +1158,15 @@
       <span class="en">— Trust the sea. It always answers.</span>
     </div>
 
+    <div class="ticket-mark" aria-label="來回機票 約 4500 新台幣">
+      <span class="ticket-zh">來回機票</span>
+      <span class="ticket-amount-row">
+        <span class="ticket-amount">4500</span>
+        <span class="ticket-ccy">NT</span>
+        <span class="ticket-note">(約)</span>
+      </span>
+    </div>
+
     <!-- Slideshow (replaces compass) -->
     <div class="hero-slideshow" aria-hidden="true">
       <img class="slide" src="1.png" alt="">
@@ -1169,15 +1177,6 @@
       <img class="slide" src="7.jpg" alt="">
       <img class="slide" src="8.jpg" alt="">
     </div>
-  </div>
-
-  <div class="ticket-mark" aria-label="來回機票 約 4500 新台幣">
-    <span class="ticket-zh">來回機票</span>
-    <span class="ticket-amount-row">
-      <span class="ticket-amount">4500</span>
-      <span class="ticket-ccy">NT</span>
-      <span class="ticket-note">(約)</span>
-    </span>
   </div>
 
   <div class="hero-footer">
