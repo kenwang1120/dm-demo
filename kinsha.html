@@ -742,6 +742,57 @@
     word-break:break-all;
   }
   .stay-info a:hover{color:var(--ocean-deep)}
+  .stay-rates{
+    margin-top:1.1rem;
+    padding-top:1.1rem;
+    border-top:1px dashed var(--line);
+  }
+  .stay-rates .rate-period{
+    font-size:.68rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--coral);
+    font-weight:500;
+    margin-bottom:.85rem;
+  }
+  .stay-rates .rate-rows{
+    display:flex;
+    flex-direction:column;
+    gap:.55rem;
+  }
+  .stay-rates .rate-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:1rem;
+    font-size:.92rem;
+    color:var(--ink-soft);
+  }
+  .stay-rates .rate-label{
+    color:var(--ink);
+    font-weight:500;
+  }
+  .stay-rates .rate-amount{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.4rem;
+    font-weight:600;
+    color:var(--ocean-deep);
+    white-space:nowrap;
+  }
+  .stay-rates .rate-amount .ccy{
+    font-size:.7em;
+    letter-spacing:.05em;
+    color:var(--ocean);
+    margin-left:.15em;
+  }
+  .stay-rates .rate-note{
+    margin-top:.8rem;
+    font-size:.72rem;
+    color:var(--ink-soft);
+    opacity:.7;
+    font-style:italic;
+    letter-spacing:.04em;
+  }
   .stay-coming-soon{
     flex:1;
     display:flex;
@@ -1183,6 +1234,20 @@
           <div class="row">
             <span class="k">Web</span>
             <span class="v"><a href="https://www.haifu.com.tw/garden" target="_blank" rel="noopener">haifu.com.tw/garden</a></span>
+          </div>
+          <div class="stay-rates">
+            <div class="rate-period">6 / 24 ~ 6 / 25</div>
+            <div class="rate-rows">
+              <div class="rate-row">
+                <span class="rate-label">2 人房 · 1 晚</span>
+                <span class="rate-amount">≈ 2,300 <span class="ccy">NT$</span></span>
+              </div>
+              <div class="rate-row">
+                <span class="rate-label">4 人房 · 1 晚</span>
+                <span class="rate-amount">≈ 3,500 <span class="ccy">NT$</span></span>
+              </div>
+            </div>
+            <div class="rate-note">浮動價格,僅供參考</div>
           </div>
         </div>
       </div>
