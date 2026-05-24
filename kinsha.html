@@ -758,31 +758,37 @@
   .stay-rates .rate-rows{
     display:flex;
     flex-direction:column;
-    gap:.55rem;
+    gap:.85rem;
   }
   .stay-rates .rate-row{
     display:flex;
     justify-content:space-between;
     align-items:baseline;
     gap:1rem;
-    font-size:.92rem;
-    color:var(--ink-soft);
+    line-height:1.3;
   }
   .stay-rates .rate-label{
+    font-family:'Noto Serif TC',serif;
+    font-size:1.75rem;
+    font-weight:700;
     color:var(--ink);
-    font-weight:500;
+    line-height:1.3;
   }
   .stay-rates .rate-amount{
     font-family:'Cormorant Garamond',serif;
-    font-size:1.4rem;
+    font-size:1.75rem;
+    font-style:italic;
     font-weight:600;
-    color:var(--ocean-deep);
+    color:var(--coral);
+    opacity:.9;
     white-space:nowrap;
+    line-height:1;
   }
   .stay-rates .rate-amount .ccy{
     font-size:.7em;
     letter-spacing:.05em;
-    color:var(--ocean);
+    color:var(--coral);
+    opacity:.85;
     margin-left:.15em;
   }
   .stay-rates .rate-note{
