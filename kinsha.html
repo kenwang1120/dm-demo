@@ -279,7 +279,15 @@
     100%  {opacity:0}
   }
   @media (max-width:820px){
-    .hero-slideshow{display:none}
+    .hero-slideshow{
+      right:auto;
+      left:50%;
+      top:42%;
+      transform:translate(-50%, -50%);
+      width:min(92vw, 460px);
+      height:min(62vw, 320px);
+      opacity:.55;
+    }
   }
 
   /* ============ SIMING MAP BLOCK ============ */
