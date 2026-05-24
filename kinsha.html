@@ -748,12 +748,23 @@
     border-top:1px dashed var(--line);
   }
   .stay-rates .rate-period{
-    font-size:.68rem;
-    letter-spacing:.22em;
-    text-transform:uppercase;
+    font-family:'Cormorant Garamond',serif;
+    font-style:italic;
+    font-size:1.5rem;
+    letter-spacing:.06em;
     color:var(--coral);
-    font-weight:500;
-    margin-bottom:.85rem;
+    font-weight:600;
+    margin-bottom:1rem;
+    display:flex;
+    align-items:center;
+    gap:.7rem;
+  }
+  .stay-rates .rate-period::before{
+    content:'';
+    flex:0 0 auto;
+    width:36px;
+    height:1px;
+    background:var(--coral);
   }
   .stay-rates .rate-rows{
     display:flex;
